@@ -1,0 +1,14 @@
+* eachland
+
+** summary
+
+This is a description of project eachland.
+
+** usage
+
+Example:
+#+begin_example
+make test
+./eachland --help
+./eachland --verbose --verbose # for debug
+#+end_example
