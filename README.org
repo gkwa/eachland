@@ -1,14 +1,27 @@
 * eachland
 
-** summary
+** gpt
 
-This is a description of project eachland.
+Write app to accept --root path /path/to/base/dir using
+jessevdk/go-flags
+
+Recurse over --root finding all files
+
+Get sha256sum of all files and group by that
+
+Report all files that are duplicates based off sha256sum
+
+Create new function that accepts fileMap and prepares a list of files
+that can be deleted since they're duplicates.
+
+Its very important to not delete all the files, so we must keep one
+from the list if the lenght if list is greater than 1.
 
 ** usage
 
 Example:
 #+begin_example
-make test
+make
 ./eachland --help
-./eachland --verbose --verbose # for debug
+./eachland --root /path/to/base/dir
 #+end_example
